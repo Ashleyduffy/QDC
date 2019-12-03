@@ -3,7 +3,7 @@ img {
 }
 
 body {
-  font-family: lucida bright;
+  font-family: "lucida bright";
   background:#46A2E1;
   margin:0;
 }
@@ -18,7 +18,7 @@ header {
 header h1 {
   font-size:5vw;
   color:#001B87;
-  font-family:lucida bright;
+  font-family:"lucidabright";
   text-shadow: 2px 2px 5px red;
   margin: 0;
 }
@@ -33,11 +33,14 @@ header h3 {
 nav {
   grid-area:nav;
   background:#DA1A1A;
+	float:left;
+	font-family:"lucida bright";
 }
     
 nav ul {
   padding:10px;
   margin:0;
+	list-style-type:none;
 }
 
 nav li {
@@ -45,11 +48,15 @@ nav li {
   list-style-type:none;
   font-size:1.5em;
   font-weight:bold;
+	display:inline;
 }
 
-nav a {
+nav li a {
   text-decoration:none;
   color:white;
+	float:left;
+	border-right: 2px solid;
+	
 }
 
 a:hover {
