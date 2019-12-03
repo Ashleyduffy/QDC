@@ -33,7 +33,7 @@ header h3 {
 nav {
   grid-area:nav;
   background:#DA1A1A;
-	float:left;
+	
 	font-family:"lucida bright";
 }
     
