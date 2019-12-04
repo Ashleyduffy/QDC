@@ -41,11 +41,13 @@ nav {
   background:#DA1A1A;
 text-align:center;
 	font-family:"Impact";
+	float:left;
 }
     
 nav ul {
   padding:10px;
   margin:0;
+	list-style-type:none;
 }
 
 nav li {
@@ -53,6 +55,7 @@ nav li {
   list-style-type:none;
   font-size:1.5em;
   font-weight:bold;
+	display:inline;
 }
 
 nav li a {
@@ -324,9 +327,9 @@ grid-template-areas:
   grid-template-columns:auto 1fr 25%;
   grid-template-areas:
     "header header header"
-    "nav nav aside"
+    "nav nav nav"
     "main main aside"
-    "footer footer footer";
+    "footer footer aside";
     }
 
 .container2 { /*for blog.html*/
