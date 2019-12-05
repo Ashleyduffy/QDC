@@ -39,9 +39,9 @@ header p {
 nav {
   grid-area:nav;
   background:#DA1A1A;
-text-align:center;
-	font-family:"Impact";
-	float:left;
+  text-align:center;
+  font-family:"Impact";
+  float:left;
 }
     
 nav ul {
@@ -55,14 +55,14 @@ nav li {
   list-style-type:none;
   font-size:1.5em;
   font-weight:bold;
-	display:inline-block;
+  display:inline-block;
 }
 
 nav li a {
   text-decoration:none;
   color:white;
-	float:left;
-	border-right: 2px solid;
+  float:left;
+  border-right: 2px solid;
 	
 }
 
@@ -138,7 +138,7 @@ figure {
 .fig1{
 grid-area:fig1;
 margin:auto;
-width: 10px;
+width: 100px;
 }
 
 .fig2{
