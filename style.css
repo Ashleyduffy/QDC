@@ -107,20 +107,7 @@ Color: #001B87;
 aside li{
 padding:10px 0;
 }
-article {
-	background:#46A2E1;
-}
-article h2 {
-  text-align:center;
-  color:white;
-  margin:1%;
-}
 
-article p {
-  color:white;
-  padding:1% 2%;
-  font-size:1em;
-}
 .top {
 	grid-area:top;
 }
@@ -143,7 +130,7 @@ figure {
 grid-area:fig1;
 margin:10px;
 width: 100px;
-	padding: 10px;
+padding: 10px;
 }
 
 .fig2{
