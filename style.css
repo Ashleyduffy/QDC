@@ -189,66 +189,18 @@ footer p {
   margin:0;
 }
 /*---------------------------Mobile Layout Styles----------------------------*/
-.container1 { /*for index.html*/
-  display: grid;
-  grid-template-columns:100%;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header"
+.wrapper1 { /*index.html*/
+    display: grid;
+    margin:0;
+    grid-gap: .5em;
+    grid-template-areas:
     "nav"
+    "header"
     "main"
     "aside"
-    "footer";   
-    }
-.container2 { /*for blog.html*/
-  display: grid;
-  grid-template-columns:100%;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "top"
-    "middle"
-    "bottom"
-    "footer";   
-    }
-.container3 { /*for special.html*/
-  display: grid;
-  grid-template-columns:100%;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main" 
-    "fig2"
-    "footer";   
-    }
-.container4 { /*for destination.html and contact.html*/
-  display: grid;
-  grid-template-columns:100%;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";   
-    }
-.nestedgrid{
-display:grid;
-grid-template-areas:
-"section fig1";
-}
-.nestedgrid2 {
-	display:grid;
-	grid-template-areas:
-	"div1"
-	"div2";
-	}
+    "footer";
+  }
+
 /*This stuff is for the hamburger menu*/
 .toggleNav {
     display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
@@ -285,57 +237,7 @@ grid-template-areas:
 
 
 /*-----------------------Tablet Media Query------------------------*/
-@media only screen and (min-width: 480px)  {
-.container1 { /*for index.html*/
-  grid-template-columns:auto 1FR;
-  grid-template-areas:
-    "header fig1"
-    "nav nav"
-    "main aside"
-    "main aside"
-    "footer footer";
-    }
-	
-.container2 { /*for blog.html*/
-  grid-template-columns:auto 1FR;
-  grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main"
-    "top top"
-    "middle middle"
-    "bottom bottom"
-    "footer footer";
-    }
-  .container3 { /*for special.html*/
-  display: grid;
-  grid-template-columns:auto 1fr;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main"
-    "fig2 fig2"
-    "footer footer";   
-    }
-  .container4 { /*for destination.html and contact.html*/
-  display: grid;
-  grid-template-columns:auto 1fr;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";   
-    }
 
-.nestedgrid{
-grid-template-areas:
-	"section"
-	"fig1";
-	}
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -426,6 +328,7 @@ grid-template-areas:
 	"div1 div2";
 	}
 }
+
 @media only screen and (min-width: 960px)   {
      
 .wrapper1 { /*index.html*/
