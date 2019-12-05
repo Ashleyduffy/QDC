@@ -137,8 +137,9 @@ figure {
 }
 .fig1{
 grid-area:fig1;
-margin:auto;
+margin:10px;
 width: 100px;
+	padding: 10px;
 }
 
 .fig2{
@@ -255,10 +256,10 @@ grid-template-areas:
 .container1 { /*for index.html*/
   grid-template-columns:auto 1FR;
   grid-template-areas:
-    "header header"
+    "header fig1"
     "nav nav"
-    "main main"
-    "aside aside"
+    "main aside"
+    "main aside"
     "footer footer";
     }
 	
@@ -327,7 +328,7 @@ grid-template-areas:
 .container1 { /*for index.html*/
   grid-template-columns:auto 1fr 25%;
   grid-template-areas:
-    "header header header"
+    "header header fig1"
     "nav nav nav"
     "main main aside"
     "footer footer aside";
