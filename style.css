@@ -321,6 +321,17 @@ grid-template-areas:
 
 	}
 
+@media only screen and (min-width: 480px)  {
+.wrapper1 { /*index.html*/
+    grid-template-columns: 45% auto;
+    grid-template-areas:
+    "nav nav"
+    "header header"
+    "main aside"
+    "footer footer";
+    }
+} 
+
 /*-----------------------Desktop Media Query------------------------*/
 @media only screen and (min-width: 960px)  {
 
@@ -380,4 +391,36 @@ grid-template-areas:
 	grid-template-areas:
 	"div1 div2";
 	}
+}
+@media only screen and (min-width: 960px)   {
+     
+.wrapper1 { /*index.html*/
+    grid-template-columns: 60% auto;
+    grid-template-areas:
+    "nav nav"        
+    "header header"
+    "main aside"
+    "footer footer";
+    }
+    
+#navwrapper {
+    display:grid;
+    grid-template-areas:
+    "first second third fourth fifth";
+    }
+    
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:center;
+  }
+
+#flex-nav li {
+    
+    padding-top:10px;
+    }
+    
 }
