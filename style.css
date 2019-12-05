@@ -240,6 +240,14 @@ grid-template-areas:
     padding-left:10px;
     padding-top:10px;
     }
+#flex-nav a {
+    color:white;
+    text-decoration:none;
+    }
+
+#flex-nav a:hover {
+    color:mediumspringgreen;
+    }
 
 
 /*-----------------------Tablet Media Query------------------------*/
