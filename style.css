@@ -36,11 +36,35 @@ header p {
 	text-align:right;
 }
 nav {
-  grid-area:nav;
-  background:#DA1A1A;
-  text-align:center;
-  font-family:"Impact";
-  float:left;
+    grid-area:nav;
+    background-color:#DA1A1A;
+    text-align:center;
+    font-family:"Impact";
+    float:left;
+    font-size:125%;
+    padding:.5em;
+    margin:0;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index:999;
+}
+
+.first {
+    grid-area:first;
+    margin-left:0;
+}
+
+.second {
+    grid-area:second;
+}
+
+.third {
+    grid-area:third;
+}
+
+.fourth {
+    grid-area:fourth;
 }
     
 nav ul {
@@ -74,6 +98,16 @@ li a:hover {
   color:#001B87;
 }
 
+#navwrapper {
+    display:grid;
+    grid-template-areas:
+    "first" 
+    "second"
+    "third"
+    "fourth" 
+    "fifth";
+    }
+    
 main {
   grid-area:main;
   background:#46A2E1;
