@@ -34,6 +34,11 @@ header a {
 header p {
 	color:white;
 }
+.facebook {
+grid-area: header;
+	margin: 0 auto;
+	max-height: 5em;
+}
 nav {
     grid-area:nav;
     background-color:#DA1A1A;
