@@ -168,6 +168,7 @@ grid-area:fig1;
 margin:10px;
 width: 100px;
 padding: 10px;
+float: right;
 }
 
 .fig2{
