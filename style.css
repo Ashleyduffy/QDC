@@ -41,7 +41,7 @@ grid-area: header;
 }
 nav {
     grid-area:nav;
-    background-color:#DA1A1A;
+    background-color:DA1A1A;
     font-size:125%;
     position: -webkit-sticky;
     position: sticky;
@@ -241,7 +241,7 @@ footer p {
     }
 
 #flex-nav a:hover {
-    color:mediumspringgreen;
+    background-color:#B21515;
     }
 
 
