@@ -197,6 +197,11 @@ footer p {
   color:white;
   margin:0;
 }
+.wrapper2 {
+	display: grid;
+	margin:0;
+	grid-gap: .5em;
+}
 /*---------------------------Mobile Layout Styles----------------------------*/
 .wrapper1 { /*index.html*/
     display: grid;
