@@ -201,6 +201,7 @@ footer p {
 	display: grid;
 	margin:0;
 	grid-gap: .5em;
+	text-align: center;
 }
 /*---------------------------Mobile Layout Styles----------------------------*/
 .wrapper1 { /*index.html*/
