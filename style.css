@@ -132,6 +132,11 @@ main p {
   color:white;
   padding:2% 4%;
   font-size:1em;
+  text-align: center;
+  font-size: 15px;
+}
+main ul {
+	text-align:center;
 }
 
 aside{
