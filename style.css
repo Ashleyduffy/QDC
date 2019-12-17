@@ -57,6 +57,9 @@ main a {
 	color: white;
 	font-family:bold;
 }
+main h2 {
+	text-align: center;
+}
 
 .first {
     grid-area:first;
