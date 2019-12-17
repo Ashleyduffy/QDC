@@ -150,6 +150,12 @@ Color: #001B87;
 aside li{
 padding:10px 0;
 }
+aside p{
+color: blue;
+}
+aside h2{
+color:red;
+}
 
 .top {
 	grid-area:top;
