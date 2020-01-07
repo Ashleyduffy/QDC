@@ -355,10 +355,7 @@ footer p {
 	grid-template-areas:
 	"div1 div2";
 	}
-}
 
-@media only screen and (min-width: 960px)   {
-     
 .wrapper1 { /*index.html*/
     grid-template-columns: 60% auto;
     grid-template-areas:
