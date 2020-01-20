@@ -1,112 +1,125 @@
-img {
-  max-width:100%;
-}
-
+/*index - this does the sticky navigation (top) and the header having an image beside the text*/
 body {
-  font-family: "Impact";
-  background:#46A2E1;
-  margin:2%;
-}
+  background-image: url("bubbles.png");
+  background-repeat: repeat;
+  font-family: Arial;
+  margin:0;
+    }
+img {
+    max-width:100%;
+    }
+.box {
+  border-radius: 1px;
+  padding: 10px;
+    }
     
 header {
-  grid-area:header;
-  background:#46A2E1;
- }
+    grid-area:header;
+    background:rgba(255,255,255,.3);
+    }
 
+.headerpic {
+    grid-area:headerpic;
+  max-height: 16em;
+    }
+.headertext {
+  grid-area:headertext;
+  max-height: 16em;
+    }
+.social {
+  grid-area:social;
+  max-height: 16em;
+}
+.logo {
+  max-height:15em; /*Note that the height and width may need to be adjusted for your image*/
+}
+
+  figure2 {
+  align-items: center;
+  width: 175px;
+  float: left;
+  border-style: solid;
+  border-color: black;
+}
+figcaption {
+  display: block;
+  font-size: 20px;
+  color: navy;
+}
+.headerpic2 {
+  grid-area:headerpic;
+ 
+    } 
+    
+.headerwrapper { /*Subgrid in my header to keep my picture and text seperated*/
+    display:grid;
+    grid-template-columns:25% 50% 25%;
+    grid-template-areas:
+    "headerpic headertext social"
+    }
 header h1 {
-  font-size:6vw;
-  color:#001B87;
-  font-family:"Impact";
-  text-shadow: 2px 2px 5px red;
-  margin: 2px 0;
-}
-
+     font-size:6vw;
+     font-family:Arial;
+     text-shadow: 2px 2px 5px black;
+     margin: 2px 0;
+    }
 header h4 {
-  font-size:3vw;
-  color:white;
-  text-shadow: 2px 2px 5px black;
-  margin:1em 0 0 0;
-}
+    font-size:3vw;
+    font-family:Arial;
+    color:navy;
+    text-shadow: 2px 2px 5px black;
+    margin:1em 0 0 0;
+    }
+    
 header a {
-	text-decoration:none;
-	color: navy;
+    text-decoration:none;
+    color:white;
+    }
+header li {
+  color: navy;
+  font-size: 20px;
+  
 }
 header p {
-	color:white;
+  text-align: right;
+  color: navy;
+  font-size: 15px;
 }
-.facebook {
-grid-area: header;
-	margin: 0 auto;
-	max-height: 5em;
-}
-nav {
-    grid-area:nav;
-    background-color:DA1A1A;
+nav {   
+    background-color:#B21515;
     font-size:125%;
+    grid-area:nav;
+    text-align:center;
+    padding:.5em;
+    margin:0;
+    /*Lines 102 to 105 make the menu stick to the top*/
     position: -webkit-sticky;
     position: sticky;
     top:0;
     z-index:999;
 }
-main {
-	background-color:#46A2E1;
-	color:white;
-	grid-area:main;
+h2 {
+  font-family: Arial;
 }
-main a {
-	color: white;
-	font-family:bold;
+nav ul {
+ list-style-type: none; 
 }
-main h2 {
-	text-align: center;
-}
-
+/*This stuff is to make my navigation go horizontal on full screen*/
 .first {
     grid-area:first;
     margin-left:0;
 }
-
 .second {
     grid-area:second;
 }
-
 .third {
     grid-area:third;
 }
-
 .fourth {
     grid-area:fourth;
 }
-    
-nav ul {
-   list-stle-type: none;
-  padding:0;
-  margin:0;
-  display: inline-block;
-	overflow:hidden;
-	background-color:#DA1A1A;
-	
-}
-nav li {
-  padding:10px 10px;
-  list-style-type:none;
-  font-size:1.5em;
-  font-weight:bold;
-  display:inline-block;
-	float:left;
-}
-nav li a {
-  display:block;
-  color:white;
-  text-align: center;
-  padding:16px;
-  text-decoration:none;	
-}
-li a:hover {
-  color:#001B87;
-}
-table {
-	border:none;
+.fifth {
+    grid-area:fifth;
 }
 #navwrapper {
     display:grid;
@@ -119,101 +132,102 @@ table {
     }
     
 main {
-  grid-area:main;
-  background:#46A2E1;
-  padding:5px;
+    background:rgba(255,255,255,.3);
+    color:navy;
+    grid-area:main;
+  
+    }
+main a {
+    
+    font-weight:bold;
 }
-
-main h2 {
-  color:white;
-  margin:5%;
+.csstricks {
+    margin:auto 5%;
+    max-width:90%;
+    } 
+    
+.section1 { 
+    background-color: brown;
+    color: white;
+    grid-area:section1;
+    }
+.section2{
+    background-color: indigo;
+    color: white;
+    grid-area:section2;
+    }
+.section3{
+    background-color: orange;
+    color: white;
+    grid-area:section3;
+    }
+    
+section a {
+    color:black;
+    font-weight:bold;
 }
-
-main p {
-  color:white;
-  padding:2% 4%;
-  font-size:1em;
-  font-size: 35px;
+.article1 {
+    background-color:gray;
+    color: black;
+    grid-area:article1;
+    }
+.article2 {
+    background-color: rgba(255,255,255,.3);
+    color: black;
+    grid-area:article2;
+    }
+.article3 {
+    background:linear-gradient(to top, white, black);
+    color: white;
+    grid-area:article3;
+    }
+.article4 {
+    background-color: rgba(255,255,255,.3);
+    color: white;
+    grid-area:article4;
+    }
+aside {
+    background:rgba(255,255,255,.3);
+    color: navy;
+    grid-area:aside;
+    }
+/*Slideshow*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+65% { left: -200%; }
+70% { left: -300%; }
+85% { left: -300%; }
+100% { left: -400%; }
 }
-
-aside{
-background:#46A2E1;
-color:white;
-grid-area:aside;
-
-}
-aside a{
-color: white;
-}
-aside a:hover{
-Color: #001B87;
-}
-aside li{
-padding:10px 0;
-}
-aside p{
-color: white;
-}
-aside h2{
-color:white;
-margin:0;
-}
-
-.top {
-	grid-area:top;
-}
-.middle {
-	grid-area:middle;
-}
-
-.bottom {
-	grid-area:bottom;
-}
-section{
-	grid-area:section;
-}
-figure {
-	background:rgba(0,0,0,.2);
-	margin:0;
-	text-align:center;
-}
-.fig1{
-grid-area:fig1;
-margin:10px;
-width: 100px;
-padding: 10px;
-float: right;
-}
-
-.fig2{
-grid-area:fig2;	
-}
-figcaption{
-color:navy;
-padding:5px;
-font-weight:bold;
-padding:5px;
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%;}
+div#slider figure { 
+  position: relative;
+  z-index:1;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
 }
 footer {
-  grid-area:footer;
-  background:#46A2E1;
-  padding:5px;
-  text-align:center;
+    background:rgba(255,255,255,.3);
+    color:navy;
+    text-align:right;
+    grid-area:footer;
+    }
+.nestedgrid{
+display:grid;
+grid-template-areas:
+"div1 div2 div3 div4";
 }
-
-footer p {
-  font-size:1em;
-  color:white;
-  margin:0;
-}
-.wrapper2 {
-	display: grid;
-	margin:0;
-	grid-gap: .5em;
-	text-align: center;
-	color: white;
-}
-/*---------------------------Mobile Layout Styles----------------------------*/
+    
+/*--------Mobile first - no media query needed until the screen is larger than 480px---------*/  
 .wrapper1 { /*index.html*/
     display: grid;
     margin:0;
@@ -225,16 +239,14 @@ footer p {
     "aside"
     "footer";
   }
-
+ 
 /*This stuff is for the hamburger menu*/
 .toggleNav {
     display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
-    text-align:center;
-    font-size:1.5em;
-    font-weight:bold;
-    padding:10px;
     }
-
+.bbb {
+  max-height:3em;
+}
 #flex-nav ul {
     display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
     text-align:center;
@@ -255,33 +267,32 @@ footer p {
     color:white;
     text-decoration:none;
     }
-
 #flex-nav a:hover {
-    background-color:#B21515;
+    color:white;
     }
-
-
-/*-----------------------Tablet Media Query------------------------*/
-
-
-/* Below will change from hamburger menu to side navigation*/
-  
-.toggleNav {
-    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
-  }
-  
-#flex-nav ul {
+#content-desktop {
+  display:none;
+}
+#content-mobile {
+  display:block;
+}
+.headerpic {
+ max-height:25em;
+}
+.bbb {
+  max-height: 3em;
+}
+header {
+ max-height : 14em; 
+}
+.headerwrapper { /*Subgrid in my header to keep my picture and text seperated*/
     display:grid;
-    text-align:left;
-  }
-
-#flex-nav li {
-    padding-left:10px;
-    padding-top:10px;
-  } 
-
-	}
-
+    grid-template-columns:40% 35% 25%;
+    grid-template-areas:
+    "headerpic headertext social"
+    }
+}
+/*---------------------Tablet media query----------------------------*/
 @media only screen and (min-width: 480px)  {
 .wrapper1 { /*index.html*/
     grid-template-columns: 45% auto;
@@ -291,68 +302,33 @@ footer p {
     "main aside"
     "footer footer";
     }
+  .facebook {
+  max-height:3em;
+}
+ 
+  #content-desktop {
+  display:block;
+}
+#content-mobile {
+  display:none;
+}
+    #content-desktop {
+  display:none;
+}
+#content-mobile {
+  display:block;
+}
+  .headerpic {
+ max-height:14em;
+ left: 10px;
+}
+header p {
+  text-align:left;
+  }
 } 
-
-/*-----------------------Desktop Media Query------------------------*/
-@media only screen and (min-width: 960px)  {
-
-.container1 { /*for index.html*/
-  grid-template-columns:auto 1fr 25%;
-  grid-template-areas:
-    "header header fig1"
-    "nav nav nav"
-    "main main aside"
-    "footer footer aside";
-    }
-
-.container2 { /*for blog.html*/
-  display: grid;
-  grid-template-columns:auto 1fr 1.5fr;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header header header"
-    "nav nav top"
-    "main main middle"
-    "main main bottom"
-    "footer footer footer";   
-    }
-	
- .container3 { /*for special.html*/
-  display: grid;
-  grid-template-columns:auto 1fr;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header header"
-    "nav nav"
-	  "main main"
-    "fig2 fig2"
-    "footer footer";   
-    }
-
-.container4 { /*for destination.html and contact*/
-  display: grid;
-  grid-template-columns:auto 1fr;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";   
-    }
- .nestedgrid{
-  display:grid;
-  grid-template-areas:
-  "section fig1";
-	}
-.nestedgrid2 {
-	display:grid;
-	grid-template-areas:
-	"div1 div2";
-	}
-
+/*---------------------Desktop media query----------------------------*/
+@media only screen and (min-width: 960px)   {
+     
 .wrapper1 { /*index.html*/
     grid-template-columns: 60% auto;
     grid-template-areas:
@@ -361,6 +337,9 @@ footer p {
     "main aside"
     "footer footer";
     }
+  .facebook {
+  max-height:4em;
+}
     
 #navwrapper {
     display:grid;
@@ -376,10 +355,17 @@ footer p {
     display:grid;
     text-align:center;
   }
-
 #flex-nav li {
     
     padding-top:10px;
     }
-    
+  #content-desktop {
+  display:block;
+}
+#content-mobile {
+  display:none;
+}
+ .headerpic {
+ max-height:10em;
+}   
 }
